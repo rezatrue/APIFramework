@@ -1,0 +1,117 @@
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/add/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "location": {
+        "lat": -91.383494,
+        "lng": 45.427362
+    },
+    "accuracy": 45,
+    "name": "Book Store",
+    "phone_number": "(+1) 983 893 3300",
+    "address": "5 North lane",
+    "types": {
+        "types": [
+            "Lost bookes",
+            "lost pen"
+        ]
+    },
+    "website": "www.lostsomething.com",
+    "language": "English_NG"
+}
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 11:01:39 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 194
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK",
+    "place_id": "726417ca73a1acbdc6a3cd515fee702a",
+    "scope": "APP",
+    "reference": "2b456374885387d9f3784b9a631e489f2b456374885387d9f3784b9a631e489f",
+    "id": "2b456374885387d9f3784b9a631e489f"
+}
+Request method:	GET
+Request URI:	https://rahulshettyacademy.com/maps/api/place/get/json?key=qaclick123&place_id=726417ca73a1acbdc6a3cd515fee702a
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+				place_id=726417ca73a1acbdc6a3cd515fee702a
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:			<none>
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 11:01:41 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 232
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "location": {
+        "latitude": "-91.383494",
+        "longitude": "45.427362"
+    },
+    "accuracy": "45",
+    "name": "Book Store",
+    "phone_number": "(+1) 983 893 3300",
+    "address": "5 North lane",
+    "types": "Array",
+    "website": "www.lostsomething.com",
+    "language": "English_NG"
+}
+Request method:	POST
+Request URI:	https://rahulshettyacademy.com/maps/api/place/delete/json?key=qaclick123
+Proxy:			<none>
+Request params:	<none>
+Query params:	key=qaclick123
+Form params:	<none>
+Path params:	<none>
+Headers:		Accept=*/*
+				Content-Type=application/json
+Cookies:		<none>
+Multiparts:		<none>
+Body:
+{
+    "place_id": "726417ca73a1acbdc6a3cd515fee702a"
+}
+HTTP/1.1 200 OK
+Date: Sun, 30 Jul 2023 11:01:41 GMT
+Server: Apache/2.4.52 (Ubuntu)
+Access-Control-Allow-Origin: *
+Access-Control-Allow-Methods: POST
+Access-Control-Max-Age: 3600
+Access-Control-Allow-Headers: Content-Type, Access-Control-Allow-Headers, Authorization, X-Requested-With
+Content-Length: 15
+Keep-Alive: timeout=5, max=100
+Connection: Keep-Alive
+Content-Type: application/json;charset=UTF-8
+
+{
+    "status": "OK"
+}
